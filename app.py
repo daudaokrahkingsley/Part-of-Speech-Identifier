@@ -4,6 +4,8 @@ import spacy
 
 app = Flask(__name__)
 
+
+
 # Load the English language model
 nlp = spacy.load("en_core_web_sm")
 
