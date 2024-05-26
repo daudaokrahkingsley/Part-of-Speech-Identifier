@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Part of Speech Identifier</title>
+  </head>
+  <body>
+    <h1>Part of Speech Identifier</h1>
+    <form method="post">
+      <label for="word">Enter a word:</label>
+      <input type="text" id="word" name="word" required />
+      <button type="submit">Identify Part of Speech</button>
+    </form>
+    {% if pos %}
+    <p>The part of speech of the word is: <strong>{{ pos }}</strong></p>
+    {% endif %}
+  </body>
+</html>
